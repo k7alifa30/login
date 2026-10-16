@@ -1,0 +1,194 @@
+/*Star my web static style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    background-image: url(../picture/pexels-roberto-nickson-2559941.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh);
+}
+
+
+:root{
+    --main-color: #2F455C;
+    --second--color: #1DCDFE;
+    --three-color: #34F5C6;
+    --four-color: #798490;
+}
+
+a{
+    text-decoration: none;
+    color: var(--second--color);
+}
+
+input{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: var(--main-color);
+}
+
+input:focus{
+    box-shadow: 0 0 20px var(--second--color);
+}
+
+::placeholder{
+    text-transform: capitalize;
+}
+
+i{
+    font-size: 20px;
+    color: var(--main-color);
+    margin-right: 10px;
+}
+div{
+    margin-bottom: 20px;
+}
+/*End my web static style */
+.page-log{
+    width: 40%;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    padding: 25px 30px;
+}
+
+.head-login{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--main-color);
+    text-shadow: 0 0 4px var(--second--color);
+}
+.form-log{
+    display: grid;
+    
+}
+.user-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-pass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-pass i{
+    margin-right: 7px;
+}
+
+.log-click{
+    grid-area: "button";
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.log-click input{
+    width: 70%;
+    background-color: var(--second--color);
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.forgot-pass{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.forgot-pass input{
+    padding: 0;
+    margin: 0 10px 0 0;
+    width: auto;
+}
+
+.forgot-pass a{
+    font-size: 15px;
+    text-shadow: 0 0 4px var(--main-color);
+}
+
+.forgot-pass a:last-child{
+    text-decoration: underline;
+}
+
+.hr{
+    grid-area: "hr";
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 4px var(--second--color);
+    border-radius: 5px;
+    position: relative;
+}
+
+.hr::before{
+    content: "or";
+    padding: 10px;
+    font-size: 20px;
+    color: var(--second--color);
+    text-align: center;
+    background-color: var(--main-color);
+    box-shadow: 0 0 4px var(--second--color);
+    box-sizing: border-box;
+    border: transparent 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: calc((100% - 40px) / 2);
+    left: calc((100% - 40px) / 2);
+}
+
+.another-opp{
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+.google-acc i ,
+.facebook-acc i ,
+.mac-acc i{
+    font-size: 27px;
+}
+
+.google-acc a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.facebook-acc a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px
+}
+
+.mac-acc a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px
+}

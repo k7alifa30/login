@@ -1,0 +1,112 @@
+/*Star my web static style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    background-image: url(../picture/pexels-roberto-nickson-2559941.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh);
+}
+
+
+:root{
+    --main-color: #2F455C;
+    --second--color: #1DCDFE;
+    --three-color: #34F5C6;
+    --four-color: #798490;
+}
+
+a{
+    text-decoration: none;
+    color: var(--second--color);
+}
+
+input{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+input:focus{
+    box-shadow: 0 0 20px var(--second--color);
+}
+
+
+label{
+    color: var(--second--color);
+    text-shadow: 0 0 10px var(--main-color);
+    font-weight: normal;
+    font-size: 20px;
+}
+
+::placeholder{
+    text-transform: capitalize;
+}
+
+/*End my web static style */
+.signup-form{
+    width: 40%;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    padding: 25px 30px;
+}
+h3{
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: var(--main-color);
+    text-shadow: 0 0 4px var(--second--color);
+    text-align: center;
+}
+
+.terms-user{
+    display: flex;
+    align-items: center;
+}
+.terms-user input{
+    width: auto;
+    margin-right: 20px;
+}
+
+.terms-user label{
+    font-size: 15px;
+    text-transform:lowercase;
+}
+
+.terms-user label a{
+    color: white;
+    text-transform: capitalize;
+}
+
+input[type="submit"]{
+    width: 50%;
+    background-color: var(--second--color);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hav-acc{
+    font-size: 18px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}

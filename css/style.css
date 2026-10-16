@@ -1,0 +1,260 @@
+/*Star my web static style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    background-color: white;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+:root{
+    --main-color: #2F455C;
+    --second--color: #1DCDFE;
+    --three-color: #34F5C6;
+    --four-color: #798490;
+}
+
+.container{
+    padding: 5px 70px;
+    margin: 0;
+}
+/*End my web static style */
+/* Start nav styling */
+.header{
+    padding: 2px;
+}
+.nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 0 10px;
+    font-size: 20px;
+}
+/* ............................................... */
+/* start Logo styling */
+.nav .logo{
+    font-size: 25px;
+    font-weight: 800;
+}
+.logo a{
+    color: var(--three-color);
+}
+.nav .f-name{
+    color: var(--second--color);
+}
+/* End Logo styling */
+/* ................................................ */
+/* Start link styling */
+.nav .ul-links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 10px;
+}
+.nav .ul-links li a{
+    color: var(--second--color);
+    transition: 0.5s;
+}
+.nav .ul-links li a:hover{
+    color: var(--three-color);
+}
+/* End link styling */
+/* ................................................ */
+/* Start user stylling*/
+.nav .user{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.nav .user a{
+    color: var(--three-color);
+}
+.nav .user a i{
+    border: 2px solid var(--second--color);
+    border-radius: 50%;
+    padding: 10px;
+}
+.user .user-port{
+    background-color: #f6f6f6a8;
+    min-width: 130px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    top: calc(100% + 20px);
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+}
+.nav .hov-user:hover .user-port {
+    display: block;
+}
+.user .user-port::before{
+    content: "";
+    position: absolute;
+    top: -23px;
+    right: 5px;
+    border: 10px solid;
+    border-color: transparent transparent #f6f6f6a8 transparent;
+}
+.user .user-port li{
+    text-align: left;
+}
+.user .user-port li:first-child{
+    border-bottom: #ddd 1px solid;
+}
+.user .user-port li a{
+    display: block;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+.user .user-port li a:hover{
+    padding-left: 30px;
+}
+/* End user stylling*/
+/* End nav styling */
+
+/* start intero stylling */
+.intero{
+    height: calc(100vh - 51px);
+    background-image: url(../picture/pexels-roberto-nickson-2559941.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    transition: 0.5s;
+}
+.intero-cont{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.intero::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.intero p{
+    text-align: center;
+    align-self: flex-end;
+    z-index: 1;
+}
+.intero p span:first-child{
+    font-weight: 800;
+    font-size: 35px;
+    color: var(--second--color);
+}
+.intero p span{
+    font-size: 25px;
+    color: var(--three-color);
+}
+
+.account{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+}
+.account a{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+/* End intero stylling */
+/* ................................................ */
+/* Start portfolio stylling */
+.portfolio{
+    background-color: #f6f6f6;
+    transition: 0.5s;
+}
+.portfolio .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.portfolio .container > div{
+    transition: 0.5s;
+    background-color: white;
+}
+.portfolio .container img{
+    max-width: 100%;
+}
+.text{
+    padding: 0 10px;
+}
+.portfolio .container .text h3{
+    font-size: 20px;
+    color: var(--second--color);
+}
+.portfolio .container .text p{
+    font-size: 15px;
+    line-height: 2;
+    color: var(--four-color);
+    margin-top: 10px;
+}
+.portfolio .container .col-1:hover{
+    scale: 1.1;
+}
+.portfolio .container .col-2:hover{
+    scale: 1.1;
+}
+.portfolio .container .col-3:hover{
+    scale: 1.1;
+}
+/* End portfolio stylling */
+/* Start footer stylling */
+.footer{
+    padding: 20px;
+    background-color: var(--main-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f6f6f6;
+}
+.footer p:first-child{
+    font-size: 25px;
+    color: white;
+    margin-right: 10px;
+}
+.footer p span:first-child{
+    color: var(--second--color);
+    font-weight: 800;
+}
+.footer p span:last-child{
+    color: var(--three-color);
+    font-weight: 800;
+}
+/* End footer stylling */
